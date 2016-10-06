@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour {
@@ -26,12 +26,12 @@ public class Player : MonoBehaviour {
 
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-2, 2, 1);
         }
 
         if (Input.GetAxis("Horizontal") > 0.1f)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(2, 2, 1);
         }
 
         if(Input.GetButtonDown("Jump"))
