@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -10,6 +11,10 @@ public class Player : MonoBehaviour {
 	public bool grounded;
     public bool canDoubleJump;
 
+    //stats
+    public int curHealth;
+    public int maxHealth = 5;
+
 	private Rigidbody2D rb2d;
     private Animator anim;
 
@@ -17,6 +22,8 @@ public class Player : MonoBehaviour {
 	void Start () {
 		rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+
+        curHealth = maxHealth;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +57,16 @@ public class Player : MonoBehaviour {
                 }
             }
         }
+
+        if (curHealth > maxHealth)
+        {
+            curHealth = maxHealth;
+        }
+            
+        if(curHealth <= 0)
+        {
+            Die();
+        }
 	}
 
 	void FixedUpdate(){
@@ -79,4 +96,12 @@ public class Player : MonoBehaviour {
             rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
         }
 	}	
+
+
+    void Die()
+    {
+        //Application.loadedLevel(Application.loadedLevel);//restart
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
 }
