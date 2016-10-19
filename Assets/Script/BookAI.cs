@@ -7,6 +7,8 @@ using System.Collections;
 
 public class BookAI : MonoBehaviour {
 
+	public static int curHealt = 5;
+
 	// What to chase?
 	public Transform target;
 
@@ -31,6 +33,22 @@ public class BookAI : MonoBehaviour {
 	public float nextWaypointDistance = 3;
 
 	private int currentWaypoint = 0;
+
+	private Player player;  
+
+	//Damage player
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+
+		
+		if (col.CompareTag( "Player")) 
+			{
+			col.GetComponent<Player> ().Damage (1);
+			}
+	
+
+	}
 
 	void Start () {
 		seeker = GetComponent<Seeker> ();
