@@ -34,23 +34,31 @@ public class BookAI : MonoBehaviour {
 
 	private int currentWaypoint = 0;
 
-	private Player player;  
+	public float knockDur= 0.02f;
+	public float knockbackPwr =350;
+
+	private Player player;
+	  
 
 	//Damage player
-
 	void OnTriggerEnter2D(Collider2D col)
 	{
 
 		
 		if (col.CompareTag( "Player")) 
 			{
-			col.GetComponent<Player> ().Damage (1);
-			}
-	
+			player.Damage (1);
 
+			StartCoroutine (player.Knockback ( 0.02f, 150, player.transform.position));
+		}
 	}
 
+
+
+
 	void Start () {
+		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+
 		seeker = GetComponent<Seeker> ();
 		rb = GetComponent<Rigidbody2D> ();
 
@@ -69,7 +77,7 @@ public class BookAI : MonoBehaviour {
 	IEnumerator UpdatePath () {
 		if(target == null) {
 
-			return false;
+			yield return 0;
 		}
 
 		seeker.StartPath (transform.position, target.position, OnPathComplete);

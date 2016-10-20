@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
 	public float maxSpeed = 3;
 	public float speed = 50f;
 	public float jumpPower = 150f;
+//	public float knockPwrX = -100;
 
 	public bool grounded;
 	public bool canDoubleJump;
@@ -20,10 +21,16 @@ public class Player : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	private Animator anim;
 
+	private BookAI book;
+	private Player player; 
+
 	// Use this for initialization
 	void Start () {
 		rb2d = gameObject.GetComponent<Rigidbody2D>();
 		anim = gameObject.GetComponent<Animator>();
+
+		book = GameObject.FindGameObjectWithTag("Enemy").GetComponent<BookAI>();
+
 
 		curHealth = maxHealth;
 	}
@@ -110,5 +117,53 @@ public class Player : MonoBehaviour {
 	public void Damage(int dmg)
 	{
 		curHealth-=dmg;
+		gameObject.GetComponent<Animation> ().Play ("Player(Redflash)");
+
+	}
+
+	public IEnumerator Knockback (float knockDur, float knockbackPwr, Vector3 knockbackDir )
+	{
+		float timer = 0;
+
+		while (knockDur > timer)
+		{
+			timer += Time.deltaTime;
+
+
+			//rb2d.velocity = new Vector2 (0, 0);
+
+			if (book.transform.position.x > transform.position.x) {
+
+				rb2d.AddForce (new Vector3 (-200, knockbackPwr, transform.position.z));
+
+				/*if (book.transform.position.y  >  transform.position.y) {
+					rb2d.AddForce (new Vector3 (-200, -knockbackPwr, transform.position.z));
+				}
+
+				else {
+					rb2d.AddForce (new Vector3 (-200, knockbackPwr, transform.position.z));
+				}*/
+			} else if (book.transform.position.x < transform.position.x) {
+
+				rb2d.AddForce (new Vector3 (200, knockbackPwr, transform.position.z));
+
+				
+				/*if (book.transform.position.y > transform.position.y) {
+					rb2d.AddForce (new Vector3 (200, -knockbackPwr, transform.position.z));
+				} 
+
+				else {
+					rb2d.AddForce (new Vector3 (200, knockbackPwr, transform.position.z));
+				}*/
+
+			} 
+			else {
+				rb2d.AddForce (new Vector3 (0, knockbackPwr, transform.position.z));
+
+			}
+			
+		}
+
+		yield return 0;
 	}
 }
