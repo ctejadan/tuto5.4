@@ -141,6 +141,17 @@ public class Player : MonoBehaviour {
 
 	}
 
+	void OnTriggerEnter2D(Collider2D col)
+	{
+
+
+		if (col.CompareTag( "Spike")) 
+		{
+			Damage (5);
+
+		}
+	}
+
 	public IEnumerator Knockback (float knockDur, float knockbackPwr, Vector3 knockbackDir )
 	{
 		float timer = 0;
