@@ -137,7 +137,7 @@ public class Player : MonoBehaviour {
 	{
         //Se vuelve a iniciar el juego
 		//Application.loadedLevel(Application.loadedLevel);//restart
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene("Inicial");
 
 	}
 
