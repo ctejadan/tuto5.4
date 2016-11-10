@@ -19,6 +19,7 @@ public class Player : MonoBehaviour {
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
+    private gameMaster gm;
 
 	private BookAI book;
 	private Player player; 
@@ -30,7 +31,15 @@ public class Player : MonoBehaviour {
         //inicializa las animaciones
 		anim = gameObject.GetComponent<Animator>();
         //inicializa el libro
-		book = GameObject.FindGameObjectWithTag("Enemy").GetComponent<BookAI>();
+
+        //SceneManager.LoadScene("scene4") <- selecciona escena
+
+
+        if (SceneManager.GetActiveScene().name == "Test1")
+        {
+            book = GameObject.FindGameObjectWithTag("Enemy").GetComponent<BookAI>();
+        }
+        
         
         //la vida del pj es igual a la vida máxima
 		curHealth = maxHealth;
@@ -46,12 +55,12 @@ public class Player : MonoBehaviour {
         //si se da vuelta en el eje x, se da vuelta el pj
 		if (Input.GetAxis("Horizontal") < -0.1f)
 		{
-			transform.localScale = new Vector3(-2, 2, 1);
+			transform.localScale = new Vector3(-1.5f, 1.5f, 1);
 		}
         //si salta, se setea el porte del pj
 		if (Input.GetAxis("Horizontal") > 0.1f)
 		{
-			transform.localScale = new Vector3(2, 2, 1);
+			transform.localScale = new Vector3(1.5f, 1.5f, 1);
 		}
         //si se apreta saltar
 		if(Input.GetButtonDown("Jump"))
