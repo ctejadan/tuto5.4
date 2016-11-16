@@ -1,0 +1,387 @@
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x134d)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
+Loading C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
+- Completed reload, in  0.209 seconds
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Cristian\Documents\GitHub\tuto5.4\Inicio_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.053549 ms
+Scanning - Process took 20 ms to complete
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at door.OnTriggerEnter2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at door.OnTriggerExit2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at door.OnTriggerEnter2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 22.474695 ms
+Scanning - Process took 42 ms to complete
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 9.515958 ms (FindLiveObjects: 0.094720 ms CreateObjectMapping: 0.079786 ms MarkObjects: 9.280437 ms  DeleteObjects: 0.041386 ms)
+
+Canceled path because a new one was requested.
+This happens when a new path is requested from the seeker when one was already being calculated.
+For example if a unit got a new order, you might request a new path directly instead of waiting for the now invalid path to be calculated. Which is probably what you want.
+If you are getting this a lot, you might want to consider how you are scheduling path requests.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Failed : Computation Time 0.00 ms Searched Nodes 0
+Error: Canceled path because a new one was requested.
+This happens when a new path is requested from the seeker when one was already being calculated.
+For example if a unit got a new order, you might request a new path directly instead of waiting for the now invalid path to be calculated. Which is probably what you want.
+If you are getting this a lot, you might want to consider how you are scheduling path requests.
+Path Number 1 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 13.09 ms Searched Nodes 36 Path Length 14
+Path Number 2 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 11 Path Length 11
+Path Number 3 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 6 Path Length 6
+Path Number 4 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player+<Knockback>c__IteratorF.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+BookAI:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+Path Completed : Computation Time 1.00 ms Searched Nodes 5 Path Length 3
+Path Number 5 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 8 Path Length 5
+Path Number 6 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 5 Path Length 5
+Path Number 7 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.51 ms Searched Nodes 6 Path Length 6
+Path Number 8 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 7 Path Length 7
+Path Number 9 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 10 Path Length 6
+Path Number 10 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 8 Path Length 5
+Path Number 11 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player+<Knockback>c__IteratorF.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+BookAI:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 0 Path Length 1
+Path Number 12 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 4 Path Length 4
+Path Number 13 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 5 Path Length 5
+Path Number 14 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 13 Path Length 6
+Path Number 15 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 7 Path Length 6
+Path Number 16 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 11 Path Length 6
+Path Number 17 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.50 ms Searched Nodes 4 Path Length 4
+Path Number 18 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player+<Knockback>c__IteratorF.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+BookAI:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 2 Path Length 2
+Path Number 19 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 2 Path Length 2
+Path Number 20 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 2 Path Length 2
+Path Number 21 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 0 Path Length 1
+Path Number 22 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 0 Path Length 1
+Path Number 23 (unique id)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We got a path. Did it have an error?False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+End of path reached
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1854 -> priority: 1 
