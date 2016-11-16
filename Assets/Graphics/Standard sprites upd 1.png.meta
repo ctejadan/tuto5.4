@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: 1cf4d1f4aea90ba449be2a4cdcf3544a
+timeCreated: 1478182803
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Standard sprites upd 1_0
+    21300002: Standard sprites upd 1_1
+    21300004: Standard sprites upd 1_2
+    21300006: Standard sprites upd 1_3
+    21300008: Standard sprites upd 1_4
+    21300010: Red_Enemy_stand1
+    21300012: Red_Enemy_Stomped
+    21300014: Standard sprites upd 1_7
+    21300016: Standard sprites upd 1_8
+    21300018: Standard sprites upd 1_9
+    21300020: Standard sprites upd 1_10
+    21300022: Standard sprites upd 1_11
+    21300024: Standard sprites upd 1_12
+    21300026: Standard sprites upd 1_13
+    21300028: Red_Enemy_Walk1
+    21300030: Red_Enemy_Walk2
+    21300032: Red_Enemy_Walk3
+    21300034: Red_Enemy_Walk4
+    21300036: Standard sprites upd 1_18
+    21300038: Standard sprites upd 1_19
+    21300040: Standard sprites upd 1_20
+    21300042: Standard sprites upd 1_21
+    21300044: Standard sprites upd 1_22
+    21300046: Standard sprites upd 1_23
+    21300048: Standard sprites upd 1_24
+    21300050: Standard sprites upd 1_25
+    21300052: Standard sprites upd 1_26
+    21300054: Standard sprites upd 1_27
+    21300056: Standard sprites upd 1_28
+    21300058: Standard sprites upd 1_29
+    21300060: Standard sprites upd 1_30
+    21300062: Standard sprites upd 1_31
+    21300064: Standard sprites upd 1_32
+    21300066: Standard sprites upd 1_33
+    21300068: Standard sprites upd 1_34
+    21300070: Standard sprites upd 1_35
+    21300072: Standard sprites upd 1_36
+    21300074: Standard sprites upd 1_37
+    21300076: Standard sprites upd 1_38
+    21300078: Standard sprites upd 1_39
+    21300080: Standard sprites upd 1_40
+    21300082: Standard sprites upd 1_41
+    21300084: Standard sprites upd 1_42
+    21300086: Standard sprites upd 1_43
+    21300088: Standard sprites upd 1_44
+    21300090: Standard sprites upd 1_45
+    21300092: Standard sprites upd 1_46
+    21300094: Standard sprites upd 1_47
+    21300096: Standard sprites upd 1_48
+    21300098: Standard sprites upd 1_49
+    21300100: Standard sprites upd 1_50
+    21300102: Standard sprites upd 1_51
+    21300104: Standard sprites upd 1_52
+    21300106: Standard sprites upd 1_53
+    21300108: Standard sprites upd 1_54
+    21300110: Standard sprites upd 1_55
+    21300112: Standard sprites upd 1_56
+    21300114: Standard sprites upd 1_57
+    21300116: Standard sprites upd 1_58
+    21300118: Standard sprites upd 1_59
+    21300120: Standard sprites upd 1_60
+    21300122: Standard sprites upd 1_61
+    21300124: Standard sprites upd 1_62
+    21300126: Standard sprites upd 1_63
+    21300128: Standard sprites upd 1_64
+    21300130: Standard sprites upd 1_65
+    21300132: Standard sprites upd 1_66
+    21300134: Standard sprites upd 1_67
+    21300136: Standard sprites upd 1_68
+    21300138: Red_Enemy_Damaged
+    21300140: Standard sprites upd 1_70
+    21300142: Standard sprites upd 1_71
+    21300144: Standard sprites upd 1_72
+    21300146: Standard sprites upd 1_73
+    21300148: Standard sprites upd 1_74
+    21300150: Standard sprites upd 1_75
+    21300152: Standard sprites upd 1_76
+    21300154: Red_Enemy_Damaged
+    21300156: Standard sprites upd 1_78
+    21300158: Standard sprites upd 1_79
+    21300160: Standard sprites upd 1_80
+    21300162: Standard sprites upd 1_81
+    21300164: Standard sprites upd 1_82
+    21300166: Standard sprites upd 1_83
+    21300168: Standard sprites upd 1_84
+    21300170: Standard sprites upd 1_85
+    21300172: Standard sprites upd 1_86
+    21300174: Standard sprites upd 1_87
+    21300176: Standard sprites upd 1_88
+    21300178: Standard sprites upd 1_89
+    21300180: Standard sprites upd 1_90
+    21300182: Standard sprites upd 1_91
+    21300184: Standard sprites upd 1_92
+    21300186: Standard sprites upd 1_93
+    21300188: Standard sprites upd 1_94
+    21300190: Standard sprites upd 1_95
+    21300192: Standard sprites upd 1_96
+    21300194: Standard sprites upd 1_97
+    21300196: Standard sprites upd 1_98
+    21300198: Standard sprites upd 1_99
+    21300200: Red_Enemy_stand2
+    21300202: Red_Enemy_Walk5
+    21300204: Red_Enemy_Walk6
+    21300206: Red_Enemy_Crash
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red_Enemy_stand1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 287
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Stomped
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Standard sprites upd 1_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 289
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Walk1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 272
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Walk2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 273
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Walk3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 272
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Walk4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 272
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Standard sprites upd 1_68
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Damaged
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Standard sprites upd 1_72
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 113
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Crash
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Standard sprites upd 1_79
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_stand2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Walk5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 273
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red_Enemy_Walk6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 272
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

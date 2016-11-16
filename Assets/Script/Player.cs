@@ -23,6 +23,8 @@ public class Player : MonoBehaviour {
 
 	private BookAI book;
 	private Player player; 
+	private GameObject enemy;
+
 
 	// inicialización
 	void Start () {
@@ -31,6 +33,9 @@ public class Player : MonoBehaviour {
         //inicializa las animaciones
 		anim = gameObject.GetComponent<Animator>();
         //inicializa el libro
+
+		enemy = GameObject.FindGameObjectWithTag("Enemy");
+
 
         //SceneManager.LoadScene("scene4") <- selecciona escena
 
@@ -171,24 +176,24 @@ public class Player : MonoBehaviour {
 
 
 			//rb2d.velocity = new Vector2 (0, 0);
+			if (enemy != null) {
+				if (enemy.transform.position.x > transform.position.x) {
 
-			if (book.transform.position.x > transform.position.x) {
+					rb2d.AddForce (new Vector3 (-200, knockbackPwr, transform.position.z));
 
-				rb2d.AddForce (new Vector3 (-200, knockbackPwr, transform.position.z));
-
-				/*if (book.transform.position.y  >  transform.position.y) {
+					/*if (book.transform.position.y  >  transform.position.y) {
 					rb2d.AddForce (new Vector3 (-200, -knockbackPwr, transform.position.z));
 				}
 
 				else {
 					rb2d.AddForce (new Vector3 (-200, knockbackPwr, transform.position.z));
 				}*/
-			} else if (book.transform.position.x < transform.position.x) {
+				} else if (enemy.transform.position.x < transform.position.x) {
 
-				rb2d.AddForce (new Vector3 (200, knockbackPwr, transform.position.z));
+					rb2d.AddForce (new Vector3 (200, knockbackPwr, transform.position.z));
 
-				
-				/*if (book.transform.position.y > transform.position.y) {
+
+					/*if (book.transform.position.y > transform.position.y) {
 					rb2d.AddForce (new Vector3 (200, -knockbackPwr, transform.position.z));
 				} 
 
@@ -196,12 +201,15 @@ public class Player : MonoBehaviour {
 					rb2d.AddForce (new Vector3 (200, knockbackPwr, transform.position.z));
 				}*/
 
-			} 
-			else {
-				rb2d.AddForce (new Vector3 (0, knockbackPwr, transform.position.z));
+				} else {
+					rb2d.AddForce (new Vector3 (0, knockbackPwr, transform.position.z));
 
+				}
 			}
-			
+			else {
+				yield return 0;
+			}
+
 		}
 
 		yield return 0;
