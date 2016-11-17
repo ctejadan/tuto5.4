@@ -25,16 +25,23 @@ public class Player : MonoBehaviour {
 	private Player player; 
 	private GameObject enemy;
 
+    public GameObject canvasDead;
 
-	// inicialización
-	void Start () {
+
+
+    // inicialización
+    void Start () {
+
         //inicializa el objeto rigidbody2d
-		rb2d = gameObject.GetComponent<Rigidbody2D>(); 
+        rb2d = gameObject.GetComponent<Rigidbody2D>(); 
         //inicializa las animaciones
 		anim = gameObject.GetComponent<Animator>();
         //inicializa el libro
 
 		enemy = GameObject.FindGameObjectWithTag("Enemy");
+
+
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
 
 
         //SceneManager.LoadScene("scene4") <- selecciona escena
@@ -141,8 +148,21 @@ public class Player : MonoBehaviour {
 	void Die()
 	{
         //Se vuelve a iniciar el juego
-		//Application.loadedLevel(Application.loadedLevel);//restart
-		SceneManager.LoadScene("Inicial");
+        //Application.loadedLevel(Application.loadedLevel);//restart
+
+        //audioSource.clip = death;
+        //audioSource.Play();
+        curHealth = 0;
+        Time.timeScale = 0;
+        canvasDead.SetActive(true);
+
+
+        if (Input.GetKeyDown("e"))
+        {
+            SceneManager.LoadScene("Inicial");
+
+        }
+        
 
 	}
 
