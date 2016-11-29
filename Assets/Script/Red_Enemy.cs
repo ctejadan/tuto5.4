@@ -8,7 +8,11 @@ public class Red_Enemy : MonoBehaviour {
 	public Transform sightStart;
 	public Transform sightEnd;
 
-	public LayerMask detectWhat;
+    public int curHealth;
+
+    public int maxHealth = 40;
+
+    public LayerMask detectWhat;
 	 
 	public bool colliding;
 
@@ -19,6 +23,8 @@ public class Red_Enemy : MonoBehaviour {
 	private Animator anim;
 
 
+
+
 	//Animator anim;
 
 
@@ -27,6 +33,8 @@ public class Red_Enemy : MonoBehaviour {
 	
 		anim = gameObject.GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+
+        curHealth = maxHealth;
 
 	}
 	
@@ -69,10 +77,21 @@ public class Red_Enemy : MonoBehaviour {
 
 	void Dies()
 	{
-		transform.localScale = new Vector2 (transform.localScale.x * 0, transform.localScale.y);
-		anim.SetBool ("Stomped", true);
 
-		Destroy (this.gameObject, 0.01f);
-		gameObject.tag="Neutralized";
+        if(curHealth < 1)
+        {
+            transform.localScale = new Vector2(transform.localScale.x * 0, transform.localScale.y);
+            anim.SetBool("Stomped", true);
+
+            Destroy(this.gameObject, 0.01f);
+            gameObject.tag = "Neutralized";
+
+        }
 	}
+
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("Player_RedFlash");
+    }
 }
