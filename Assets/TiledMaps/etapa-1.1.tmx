@@ -4,12 +4,23 @@
   <image source="../../../VideoJuego/Assets/Graphics/pizarron.png" width="600" height="304"/>
   <tile id="3">
    <objectgroup draworder="index">
-    <object id="1" x="0.125" y="0.125" width="15.75" height="15.625"/>
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="36">
+   <objectgroup draworder="index">
+    <object id="1" x="0.130435" y="-0.0434783" width="16" height="16"/>
    </objectgroup>
   </tile>
   <tile id="38">
    <objectgroup draworder="index">
-    <object id="1" x="4" y="-0.0869565" width="11.913" height="16.0435"/>
+    <object id="2" x="0" y="-0.0434783" width="5" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="73">
+   <objectgroup draworder="index">
+    <object id="1" x="2.95652" y="0" width="13.0435" height="16"/>
+    <object id="2" x="9.47826" y="17.3043" width="0.0434783" height="0.0434783"/>
    </objectgroup>
   </tile>
   <tile id="481">
@@ -29,54 +40,54 @@
   </tile>
   <tile id="630">
    <objectgroup draworder="index">
-    <object id="4" x="0" y="-0.0434783">
-     <polyline points="0,0 3.82609,0 3.82609,2.04348 5,2.04348 5.04348,4.95652 6.78261,5 6.73913,6 15.9565,5.95652 15.9565,16.0435 0,16.1304 0,-0.0434783"/>
+    <object id="4" x="0" y="-0.00175316">
+     <polyline points="0,0 3.87822,0 3.87822,2.02151 5.06812,2.02151 5.11219,4.90322 6.83154,4.90276 6.83094,5.93548 16.1739,5.89247 16.1739,15.871 0,15.957 0,-0.0430108"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="632">
    <objectgroup draworder="index">
-    <object id="4" x="0.0434783" y="5.95652" width="15.8696" height="10.0435"/>
+    <object id="4" x="0" y="5.96" width="16" height="10.0435"/>
    </objectgroup>
   </tile>
   <tile id="638">
    <objectgroup draworder="index">
-    <object id="2" x="0.0434783" y="5.96" width="15.87" height="10.04"/>
+    <object id="2" x="0.0434783" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="639">
    <objectgroup draworder="index">
-    <object id="10" x="0.04" y="5.96" width="15.87" height="10.04"/>
+    <object id="10" x="0.04" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="640">
    <objectgroup draworder="index">
-    <object id="2" x="0.04" y="5.96" width="15.87" height="10.0435"/>
+    <object id="2" x="0.04" y="5.96" width="16" height="10.0435"/>
    </objectgroup>
   </tile>
   <tile id="641">
    <objectgroup draworder="index">
-    <object id="2" x="0.0434783" y="5.96" width="15.8696" height="10.04"/>
+    <object id="2" x="0.0434783" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="649">
    <objectgroup draworder="index">
-    <object id="2" x="0.04" y="5.96" width="15.87" height="10.04"/>
+    <object id="2" x="0.04" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="650">
    <objectgroup draworder="index">
-    <object id="3" x="0.04" y="5.96" width="15.87" height="10.04"/>
+    <object id="3" x="0.04" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="651">
    <objectgroup draworder="index">
-    <object id="2" x="0.04" y="5.96" width="15.87" height="10.04"/>
+    <object id="2" x="0.04" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="652">
    <objectgroup draworder="index">
-    <object id="2" x="0.04" y="5.96" width="15.87" height="10.04"/>
+    <object id="2" x="0.04" y="5.96" width="16" height="10.04"/>
    </objectgroup>
   </tile>
   <tile id="654">

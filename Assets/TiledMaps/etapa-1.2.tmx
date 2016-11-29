@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="300" height="20" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="pizarron" tilewidth="16" tileheight="16" tilecount="703" columns="37">
+  <image source="../../../VideoJuego/Assets/Graphics/pizarron.png" width="600" height="304"/>
+  <tile id="3">
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="36">
+   <objectgroup draworder="index">
+    <object id="1" x="0.130435" y="-0.0434783" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="38">
+   <objectgroup draworder="index">
+    <object id="2" x="0" y="-0.0434783" width="5" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="73">
+   <objectgroup draworder="index">
+    <object id="1" x="2.95652" y="0" width="13.0435" height="16"/>
+    <object id="2" x="9.47826" y="17.3043" width="0.0434783" height="0.0434783"/>
+   </objectgroup>
+  </tile>
+  <tile id="481">
+   <objectgroup draworder="index">
+    <object id="1" x="-0.1875" y="0" width="16.125" height="16.125"/>
+   </objectgroup>
+  </tile>
+  <tile id="593">
+   <objectgroup draworder="index">
+    <object id="1" x="-0.0869565" y="0" width="4.13043" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="628">
+   <objectgroup draworder="index">
+    <object id="2" x="3.91304" y="0" width="12.1304" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="630">
+   <objectgroup draworder="index">
+    <object id="4" x="0" y="-0.00175316">
+     <polyline points="0,0 3.87822,0 3.87822,2.02151 5.06812,2.02151 5.11219,4.90322 6.83154,4.90276 6.83094,5.93548 16.1739,5.89247 16.1739,15.871 0,15.957 0,-0.0430108"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="632">
+   <objectgroup draworder="index">
+    <object id="4" x="0" y="5.96" width="16" height="10.0435"/>
+   </objectgroup>
+  </tile>
+  <tile id="638">
+   <objectgroup draworder="index">
+    <object id="2" x="0.0434783" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="639">
+   <objectgroup draworder="index">
+    <object id="10" x="0.04" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="640">
+   <objectgroup draworder="index">
+    <object id="2" x="0.04" y="5.96" width="16" height="10.0435"/>
+   </objectgroup>
+  </tile>
+  <tile id="641">
+   <objectgroup draworder="index">
+    <object id="2" x="0.0434783" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="649">
+   <objectgroup draworder="index">
+    <object id="2" x="0.04" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="650">
+   <objectgroup draworder="index">
+    <object id="3" x="0.04" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="651">
+   <objectgroup draworder="index">
+    <object id="2" x="0.04" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="652">
+   <objectgroup draworder="index">
+    <object id="2" x="0.04" y="5.96" width="16" height="10.04"/>
+   </objectgroup>
+  </tile>
+  <tile id="654">
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="6.1875" width="15.9375" height="9.875"/>
+   </objectgroup>
+  </tile>
+  <tile id="665">
+   <objectgroup draworder="index">
+    <object id="2" x="3.95652" y="0.0434783">
+     <polyline points="0,0 11.913,-0.0869565 12,15.7391 -4,15.7391 -3.95652,5.95652 -3,5.95652 -3,5 -2,5 -2,3.86957 -1.04348,3.86957 -0.956522,1.91304 0.0434783,1.91304 0,-0.0434783"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="669">
+   <objectgroup draworder="index">
+    <object id="1" x="0.0909091" y="0" width="15.9091" height="16.0909"/>
+   </objectgroup>
+  </tile>
+  <tile id="682">
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0.0909091" width="15.9091" height="15.9091"/>
+   </objectgroup>
+  </tile>
+  <tile id="689">
+   <objectgroup draworder="index"/>
+  </tile>
+  <tile id="691">
+   <objectgroup draworder="index">
+    <object id="1" x="0.0625" y="0.0625" width="15.9375" height="15.9375"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="704" name="tiza2" tilewidth="16" tileheight="16" tilecount="189" columns="27">
+  <image source="../../../VideoJuego/Assets/Graphics/tiza2.png" width="442" height="122"/>
+  <tile id="82">
+   <objectgroup draworder="index">
+    <object id="1" x="6.0625" y="6.75" width="10" height="9.0625"/>
+   </objectgroup>
+  </tile>
+  <tile id="83">
+   <objectgroup draworder="index">
+    <object id="1" x="-0.1875" y="6.75" width="16.375" height="9.06"/>
+   </objectgroup>
+  </tile>
+  <tile id="105">
+   <objectgroup draworder="index">
+    <object id="1" x="-0.1875" y="6.75" width="13.25" height="9.06"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="300" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt2+dvHEUYx/HdU6RAekLnPYKA45pC5zVCBOJ04A39HUIKxHGqw0vKSyST4hQ7oZNKEZJJdRJ67y+QAk7iFOBP4Htan7x+NHM7c7vrGeN98VEU+2bm2d/MPro9271hEJSCIBhXKBQKHrsBvfSrG/n3JszEzbhl8P9ZuF9hPh7AgxmuM5qVc78XnXgNm7AZW7AVXdiG7diBnehGTw1jOjVjdF/XzWX72jSyXMcmqzrMQj0a0Iimwa+7oKqlGS2YjQVVVJvP1fXUDdbWanh9z/PG6r7y60vqvmIr3ocqdSzEIizGEizFMiw3UMu6qu/Fpakvi4x0dT8TjEy/6g3U93HvoE9wCIdxBEdxDMfRhxM4ablub0qmNSXNY5uV7ozoeoI8a7bnTTVex/YcV+tf1fpc3laizfA6yv3q2SDqVzZZ/R8l7b/r+gr+kWdmhWA7nxxfyxym9brOTpdhUr96NYj6lSqrseS5ch7BUL9fhXasxhoP6iv4R54Z+Z7Vdj7V+9686nWdnS5Ded+txTqsD6J+9XEQ9au0nzGMdknPCa7rK/hHnhnV86cN3TNsHvW6zk6XYbXn83K/+iOI+lXazxhGu6TPSFzXV/CPPDOnBdv55Pha5jCt13V2ugx1n02eCqJ+NS6M+pUqq7HkT/yFfpzBWZzDAM57UF/BP/LMjA+Hs51Pjq82R7Wf+5vU6zo7XYbyvruAi7gURP1q5mC/UmU1llyGyzEBEzEJkzEFUz2or+AfeWbqBNv55HjdHEm/p2RSr+vsdBnK+24apmNGGPWr+WHUr1RZjSWzUI8GNKIJzWjBbA/qK/hHnpkFgu18crxqDpPfqzSp13V2ugzlfTcHczEvjPrVijDqV6qsxpJWLMQiLMYSLMUyLPegvoJ/5JlZKdjOJ8fLOUx/D9ykXtfZ6TKU991DeBiPhFG/6gyjfqXKKg/xXEdqTRNtWIV2rMYarMU6rPegvoJ/5JnZLNjOJ8fH57D5uxWTel1np8tQ3ncb0IGNYdSvyn+PU+5XqqyyJnMdiTVNbcFWdGEbtmMHdqLbg/ry3gsbrmv3hTwzhwXb+eT4yhxJ+1F+j9IaJu9PvF7X2ekylPddD3Zhdxj1q9Nh1K9UWWVJlXPea9o4gqM4huPowwmcxCkP6st7L2y5vgYfyDPTL9jOJ8f3G+xVpVfFmdTrOjtdhvK++xSf4fMw6lfjS1G/UmWVFV3Wea5p6wzO4hwGcB4XcBGXPKgvjfqYLHpVRb0H15Y11dnUnVd5ZiaUhrNdW4437U+SyRl3nbMuQ3nf/Y1/8G8Y9au6wX4ls8pKtfOe15q1mIhJmIwpmIppmI4ZHtSXVta9ysc9zILqunTXKs9Mg2C7dnyszfsp0z2J1+s6Z12G8r67AlfiqtLwz69k1llIOut5rFmrRjShGS2YjTmYi3maMaY5y9eZjrsa1+BaXIfrc9yLNFzvXR5nNulrqjMjv1brObR9/jPdj7S15SHpvrsVt+H20lC/auPfdmEDOrARLyi+n8TknMdfX352regLo2dY2zWTNCrySTOfac7ydabj7sCduAt3457YNUiVOWvdi7Sy3itXVNczkteYxV7onhNdZ/siXsLLeKWG8ZtwUKMHu7Abr6MrZwPhkMozbNZrqPpVmvlMc66smdRXdONMX98+AvtU8J+uX7muaw/2Yh/244Dl+EOl6LMsW5Vnz1rGxj2Kx/C4JsuOcLg81sh6PtfeCKt7E2/hbbyDd/Ee9mAv9mE/DuAg3scH+DBhXrlGPKcn8CSewtOxNSqv79YwmUNV50cZXGt5jvJ7XtOfXX2BL/EVvsY3+Bbf4Xv8gB/xE37GL/gVv+H3MP06JudSlWMe15NnZv8BdqELmQ==
+  </data>
+ </layer>
+ <layer name="Capa de patrones 2" width="300" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmUFuAyEMRSPNDZJT5D49RqTef9dsZjOZMgFjf8DvSW/RTbANfDHq7QYAWfjZPgUtr83m2Z7WCNCK9exxRmOxZk0Po84M5r2brT3M3vdKqHOKrMIaLahrH3k2M6DOKfIKr9w5/t2Kuh/vOWVAnVfkF1otoa4tut/VUecTGYUR7qjr8OwtA+qsIrOwp0fU9UT2mg2yCkfw/vZR6TOgrisUs8qEOmvIK2y1RPR6nuv2qm0FeBPh7B4pvc1q3mC1KHvOArmEJVu+yyK+34549G4hco9W5Xf73x31/UD9GVfXVutVprbmYgvqWWRDPW/Un2l1fR499pqN5R71+k71qnlGamas/D/NDEbsj2c96vmd+c1bytKXFfV8os7hGVffbh6oZ7uSI+2Tat1R5jriGiPNB/qh3v8R8sDyO17MON9S7R6scCYBsqK+hyPcb/IHAL6FtwwAwJr8AZW8XVA=
+  </data>
+ </layer>
+</map>
