@@ -8,6 +8,7 @@ public class door : MonoBehaviour {
 
     public int LevelToLoad;
     private gameMaster gm;
+    public GameObject doorSound;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class door : MonoBehaviour {
             gm.InputText.text = ("Presione [E]");
             if (Input.GetKeyDown("e"))
             {
+                doorSound.SetActive(true);
                 SceneManager.LoadScene("Etapa1");
 
             }
@@ -34,7 +36,7 @@ public class door : MonoBehaviour {
             if (Input.GetKeyDown("e"))
             {
                 SceneManager.LoadScene("Etapa1");
-
+                doorSound.SetActive(true);
             }
         }
     }

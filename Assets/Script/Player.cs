@@ -26,6 +26,11 @@ public class Player : MonoBehaviour {
 	private GameObject enemy;
 
     public GameObject canvasDead;
+    public GameObject heartSound;
+    public GameObject baseSound;
+    public GameObject painSound;
+
+    AudioSource audio;
 
 
 
@@ -106,8 +111,12 @@ public class Player : MonoBehaviour {
         //si la vida del personaje es menor o igual a 0
 		if(curHealth <= 0)
 		{
+            baseSound.SetActive(false);
+            painSound.SetActive(true);
             //DIEEEE
-			Die();
+
+            //audio.enabled = true;
+            Die();
 		}
 	}
 
@@ -150,10 +159,14 @@ public class Player : MonoBehaviour {
         //Se vuelve a iniciar el juego
         //Application.loadedLevel(Application.loadedLevel);//restart
 
+        
+
         //audioSource.clip = death;
         //audioSource.Play();
         curHealth = 0;
         Time.timeScale = 0;
+        heartSound.SetActive(true);
+
         canvasDead.SetActive(true);
 
 
