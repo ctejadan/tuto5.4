@@ -42,6 +42,7 @@ public class BookAI : MonoBehaviour {
 	  
 
 	//Damage player
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
 
@@ -51,6 +52,7 @@ public class BookAI : MonoBehaviour {
 			player.Damage (1);
 
 			StartCoroutine (player.Knockback ( 0.02f, 150, player.transform.position));
+
 		}
 	}
 
