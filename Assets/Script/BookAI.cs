@@ -8,6 +8,7 @@ using System.Collections;
 public class BookAI : MonoBehaviour {
 
 	public static int curHealt = 5;
+	private Rigidbody2D rb2d;
 
 	// What to chase?
 	public Transform target;
@@ -58,6 +59,8 @@ public class BookAI : MonoBehaviour {
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		rb2d = gameObject.GetComponent<Rigidbody2D>(); 
+
 
 		seeker = GetComponent<Seeker> ();
 		rb = GetComponent<Rigidbody2D> ();
@@ -112,6 +115,7 @@ public class BookAI : MonoBehaviour {
 
 		if (currentWaypoint >= path.vectorPath.Count) {
 			if (pathisEnded) {
+				rb2d.AddForce (new Vector3 (-2, 0f, transform.position.z));
 				return;
 			}
 
