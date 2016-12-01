@@ -127,13 +127,17 @@
      <Compile Include="Assets\Script\Blue_enemy.cs" />
      <Compile Include="Assets\Script\BookAI.cs" />
      <Compile Include="Assets\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Script\Cloud.cs" />
+     <Compile Include="Assets\Script\CloudX.cs" />
      <Compile Include="Assets\Script\GroundCheck.cs" />
      <Compile Include="Assets\Script\HUD.cs" />
      <Compile Include="Assets\Script\PauseMenu.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\Red_Enemy.cs" />
+     <Compile Include="Assets\Script\attackTrigger.cs" />
      <Compile Include="Assets\Script\door.cs" />
      <Compile Include="Assets\Script\gameMaster.cs" />
+     <Compile Include="Assets\Script\playerAttack.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SpriteDepthInMap.cs" />
