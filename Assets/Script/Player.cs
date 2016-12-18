@@ -50,17 +50,20 @@ public class Player : MonoBehaviour {
 
 
         //SceneManager.LoadScene("scene4") <- selecciona escena
+        curHealth = maxHealth;
+        
 
-
-        if (SceneManager.GetActiveScene().name == "Test1")
+        if (SceneManager.GetActiveScene().name != "Inicial")
         {
             book = GameObject.FindGameObjectWithTag("Enemy").GetComponent<BookAI>();
         }
-        
-        
+
+
         //la vida del pj es igual a la vida máxima
-		curHealth = maxHealth;
-	}
+
+		
+
+    }
 
 	// Se llama una vez por frame
 	void Update () {
