@@ -29,6 +29,7 @@ public class Player : MonoBehaviour {
     public GameObject heartSound;
     public GameObject baseSound;
     public GameObject painSound;
+    public GameObject hitPlayer;
 
     AudioSource audio;
 
@@ -184,10 +185,13 @@ public class Player : MonoBehaviour {
 
 	public void Damage(int dmg)
 	{
+        hitPlayer.SetActive(false);
         //Se le resta el daño a la velocidad del pj
-		curHealth-=dmg;
+        curHealth -=dmg;
+        hitPlayer.SetActive(true);
+
         //se muestra que el pj recibió daño
-		gameObject.GetComponent<Animation> ().Play ("Player(Redflash)");
+        gameObject.GetComponent<Animation> ().Play ("Player(Redflash)");
 
 	}
 
