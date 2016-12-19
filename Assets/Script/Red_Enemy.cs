@@ -8,10 +8,7 @@ public class Red_Enemy : MonoBehaviour {
 	public Transform sightStart;
 	public Transform sightEnd;
 
-    public int curHealth;
-
-    public int maxHealth = 40;
-
+	public ParticleSystem deathEffect;
     public LayerMask detectWhat;
 	 
 	public bool colliding;
@@ -21,6 +18,9 @@ public class Red_Enemy : MonoBehaviour {
 	private Player player;
 
 	private Animator anim;
+
+	public int curHealth;
+	public int MaxHealth =3;
 
 
 
@@ -34,7 +34,7 @@ public class Red_Enemy : MonoBehaviour {
 		anim = gameObject.GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
-        curHealth = maxHealth;
+        curHealth = MaxHealth;
 
 	}
 	
@@ -52,7 +52,13 @@ public class Red_Enemy : MonoBehaviour {
 			transform.localScale = new Vector2 (transform.localScale.x * -1 , transform.localScale.y);
 			velocity *= -1;
 		}
+		if (curHealth <= 0) {
+			Vector3 position = transform.position;
+			Instantiate (deathEffect.gameObject,transform.position,transform.rotation);
 
+			Destroy (gameObject);
+
+		}
 	
 	}
 
@@ -88,9 +94,12 @@ public class Red_Enemy : MonoBehaviour {
         
 	}
 
-    public void Damage(int damage)
-    {
-        curHealth -= damage;
-        gameObject.GetComponent<Animation>().Play("Player_RedFlash");
-    }
+
+
+	public void Damage(int damage)
+	{
+		curHealth -= damage;
+
+	}
+
 }

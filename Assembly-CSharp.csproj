@@ -145,6 +145,7 @@
      <Compile Include="Assets\Script\door2.cs" />
      <Compile Include="Assets\Script\gameMaster.cs" />
      <Compile Include="Assets\Script\playerAttack.cs" />
+     <Compile Include="Assets\Script\recoverHealth.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SpriteDepthInMap.cs" />
