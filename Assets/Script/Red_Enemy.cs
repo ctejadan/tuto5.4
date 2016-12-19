@@ -21,15 +21,15 @@ public class Red_Enemy : MonoBehaviour {
 
 	public int curHealth;
 	public int MaxHealth =3;
+    public GameObject explotionSound;
 
 
 
+    //Animator anim;
 
-	//Animator anim;
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 		anim = gameObject.GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -53,7 +53,9 @@ public class Red_Enemy : MonoBehaviour {
 			velocity *= -1;
 		}
 		if (curHealth <= 0) {
-			Vector3 position = transform.position;
+            explotionSound.SetActive(false);
+            explotionSound.SetActive(true);
+            Vector3 position = transform.position;
 			Instantiate (deathEffect.gameObject,transform.position,transform.rotation);
 
 			Destroy (gameObject);
@@ -83,9 +85,12 @@ public class Red_Enemy : MonoBehaviour {
 
 	void Dies()
 	{
+        explotionSound.SetActive(false);
+        explotionSound.SetActive(true);
+        Vector3 position = transform.position;
+        Instantiate(deathEffect.gameObject, transform.position, transform.rotation);
 
-   
-            transform.localScale = new Vector2(transform.localScale.x * 0, transform.localScale.y);
+        transform.localScale = new Vector2(transform.localScale.x * 0, transform.localScale.y);
             anim.SetBool("Stomped", true);
 
             Destroy(this.gameObject, 0.01f);

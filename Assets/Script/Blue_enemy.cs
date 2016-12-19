@@ -21,7 +21,9 @@ public class Blue_enemy : MonoBehaviour {
 	public int curHealt;
 	public int MaxHealt =3;
 
-	public ParticleSystem deathEffect;
+    public GameObject explotionSound;
+
+    public ParticleSystem deathEffect;
 
 
 	private Player player;
@@ -56,7 +58,9 @@ public class Blue_enemy : MonoBehaviour {
 			Jump ();
 
 			if (curHealt <= 0) {
-				Instantiate (deathEffect.gameObject,transform.position,transform.rotation);
+                explotionSound.SetActive(false);
+                explotionSound.SetActive(true);
+                Instantiate (deathEffect.gameObject,transform.position,transform.rotation);
 				Destroy (gameObject);
 			
 			}
