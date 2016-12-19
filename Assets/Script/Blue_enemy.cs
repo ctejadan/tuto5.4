@@ -21,6 +21,8 @@ public class Blue_enemy : MonoBehaviour {
 	public int curHealt;
 	public int MaxHealt =3;
 
+	public ParticleSystem deathEffect;
+
 
 	private Player player;
 	private Animator _animation;
@@ -54,7 +56,7 @@ public class Blue_enemy : MonoBehaviour {
 			Jump ();
 
 			if (curHealt <= 0) {
-			
+				Instantiate (deathEffect.gameObject,transform.position,transform.rotation);
 				Destroy (gameObject);
 			
 			}
