@@ -18,6 +18,9 @@ public class Blue_enemy : MonoBehaviour {
 
 	public Transform instadeath;
 
+	public int curHealt;
+	public int MaxHealt =3;
+
 
 	private Player player;
 	private Animator _animation;
@@ -29,6 +32,7 @@ public class Blue_enemy : MonoBehaviour {
 		_animation = GetComponent<Animator> ();
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 		rb2d = gameObject.GetComponent<Rigidbody2D>(); 
+		curHealt = MaxHealt;
 	
 	}
 	
@@ -48,6 +52,12 @@ public class Blue_enemy : MonoBehaviour {
 			velocity *= -1;
 			_canJump = true;
 			Jump ();
+
+			if (curHealt <= 0) {
+			
+				Destroy (gameObject);
+			
+			}
 		}
 	
 
@@ -96,5 +106,13 @@ public class Blue_enemy : MonoBehaviour {
 		_canJump = false;
 
 	}
+	public void Damage(int damage)
+	{
+		curHealt -= damage;
+		gameObject.GetComponent<Animation> ().Play ("Player(Redflash)");
+	}
+
+
 }
+
 	

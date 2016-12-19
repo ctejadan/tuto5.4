@@ -7,7 +7,7 @@ using System.Collections;
 
 public class BookAI : MonoBehaviour {
 
-	public static int curHealt = 5;
+	public int curHealt;
 	private Rigidbody2D rb2d;
 
 	// What to chase?
@@ -27,6 +27,9 @@ public class BookAI : MonoBehaviour {
 	public float speed = 300f;
 	public ForceMode2D fMode;
 
+	public int MaxHealt =2;
+
+
 	[HideInInspector]
 	public bool pathisEnded = false;
 
@@ -42,6 +45,10 @@ public class BookAI : MonoBehaviour {
 	  
 
 	//Damage player
+
+
+
+
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
@@ -62,6 +69,8 @@ public class BookAI : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 		rb2d = gameObject.GetComponent<Rigidbody2D>(); 
+
+		curHealt = MaxHealt;
 
 
 		seeker = GetComponent<Seeker> ();
@@ -142,5 +151,16 @@ public class BookAI : MonoBehaviour {
 
 	
 	}
+	public void Damage(int damage)
+	{
+		curHealt -= damage;
+		gameObject.GetComponent<Animation> ().Play ("Player(Redflash)");
+	}
+	void Update () {
+		if (curHealt <= 0) {
 
+			Destroy (gameObject);
+
+		}
+	}
 }
